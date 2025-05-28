@@ -1,4 +1,4 @@
-body {
+body, p {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,27 +30,31 @@ body {
 
 .calculadora-visor p {
     margin-right: 40px;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .calculadora-numeros {
   display: grid; 
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 20px;
-  background-color: #f5f5f5;
+  gap: 14px;
+  padding: 12px 15px;
+  background-color: rgb(99, 93, 93);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
 .calculadora-numeros p {
-  background-color: #e0e0e0;
+  background-color: rgb(218, 205, 205);
   text-align: center;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 8px;
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, transform 0.1s;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .calculadora-numeros p:hover {
