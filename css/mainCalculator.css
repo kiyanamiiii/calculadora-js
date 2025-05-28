@@ -1,40 +1,39 @@
-body, p {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-box-calculadora {
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    height: 100vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .calculadora-header {
-    border-radius: 15px;
-    width: 30vw;
+  border-radius: 15px;
+  width: 30vw;
 }
 
 .calculadora-visor {
-    background-color: lightgray;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    font-size: 35px;
+  background-color: lightgray;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 35px;
 }
 
 .calculadora-visor p {
-    margin-right: 40px;
-    font-weight: bold;
+  margin-right: 40px;
+  font-weight: bold;
 }
 
 .calculadora-numeros {
-  display: grid; 
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
   padding: 12px 15px;
@@ -43,25 +42,24 @@ body, p {
   border-bottom-right-radius: 15px;
 }
 
-.calculadora-numeros p {
+/* Estilo visual dos botões */
+.calculadora-numeros button {
   background-color: rgb(218, 205, 205);
   text-align: center;
-  padding: 20px 30px;
+  padding: 20px 0;
+  border: none;
   border-radius: 8px;
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, transform 0.1s;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
-.calculadora-numeros p:hover {
+/* Efeitos de hover e active */
+.calculadora-numeros button:hover {
   background-color: #d0d0d0;
 }
 
-.calculadora-numeros p:active {
+.calculadora-numeros button:active {
   background-color: #c0c0c0;
   transform: scale(0.95);
 }
